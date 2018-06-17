@@ -3,60 +3,87 @@
 {% block html_attribs %} class="no-js" lang="en-us"{% endblock %}
 
 {% block metas %}
-    <!-- Include all meta tags here -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="identifier-url" content="http://www.sarthakfoundation.org/" />
-    <meta name="DC.title" content="Sarthak Foundation" />
-    <meta name="geo.region" content="IN-UP" />
-    <meta name="geo.placename" content="129-Manas Enclave, Faridi Nagar, Lucknow, U.P, India" />
-    <meta name="geo.position" content="26.896906;80.998785" />
-    <meta name="ICBM" content="26.896906, 80.998785" />
-    <meta name="description" content="Sarthak's vision is to add significance to the lives of the underprivileged children by providing quality education." />
-    <meta name="keywords" content="Sarthak Foundation, sarthakfoundation, Sarthak, Sarthi, Educate A Child, NGO, Donate, Volunteer, Sponsor, Organization, Children Education, Education, Sarthi Story, Our Model ,Malhaur Outreach, Chinhat Outreach, Vijayant Khand Outreach ,Bekar Se Saakar, Wish Tree, Become A Sarthi,  Manas Enclave, Lucknow" />
-    <meta name="author" content="Gurek Singh" />
-    <meta name="revisit-after" content="15" />
-    <meta name="language" content="EN" />
-    <meta name="copyright" content="© 2018 Sarthak Foundation" />
-    <meta name="robots" content="All" />
-    {{ super() }}
+	<!-- Include all meta tags here -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="identifier-url" content="http://www.sarthakfoundation.org/" />
+	<meta name="DC.title" content="Sarthak Foundation" />
+	<meta name="geo.region" content="IN-UP" />
+	<meta name="geo.placename" content="129-Manas Enclave, Faridi Nagar, Lucknow, U.P, India" />
+	<meta name="geo.position" content="26.896906;80.998785" />
+	<meta name="ICBM" content="26.896906, 80.998785" />
+	<meta name="description" content="Sarthak's vision is to add significance to the lives of the underprivileged children by providing quality education." />
+	<meta name="keywords" content="Sarthak Foundation, sarthakfoundation, Sarthak, Sarthi, Educate A Child, NGO, Donate, Volunteer, Sponsor, Organization, Children Education, Education, Sarthi Story, Our Model, Malhaur Outreach, Chinhat Outreach, Vijayant Khand Outreach, Bekar Se Saakar, Wish Tree, Become A Sarthi,  Manas Enclave, Lucknow" />
+	<meta name="author" content="Gurek Singh" />
+	<meta name="revisit-after" content="15" />
+	<meta name="language" content="EN" />
+	<meta name="copyright" content="© 2018 Sarthak Foundation" />
+	<meta name="robots" content="All" />
+	{{ super() }}
 {% endblock %}
 
 {% block title %}Sarthak Foundation{% endblock %}
 
 {% block styles %}
-    {{ super() }}
-    <!-- Include all custom CSS here -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	{{ super() }}
+	<!-- Include all custom CSS here -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 {% endblock %}
 
 {% block scripts %}
-    {{ super() }}
-    <!-- Inlcude all custom JS here -->
+	{{ super() }}
+	<!-- Inlcude all custom JS here -->
 {% endblock %}
 
 {% block navbar %}
-    <!-- Create the navbar here -->
+	<!-- Create the navbar here -->
+	<nav class="navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="{{ url_for('static', filename='img/logo-header.png')}}" alt="" class="img img-responsive">
+				</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+					<li><a href="">Know Us</a></li>
+					<li><a href="">Team</a></li>
+					<li><a href="">Public Releases</a></li>
+					<li><a href="">Become a Sarthi</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
 {% endblock%}
 
 {% block body %}
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    {{ super () }}
-
+	<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	{{ super () }}
 {% endblock %}
 
 {% block footer %}
-    <footer id="footer" class="footer">
-        <div class="container padding-large text-center">
-            <div class="row">
-            </div>
-        </div>
-    </footer>
+	<footer id="footer" class="footer">
+			<div class="container padding-large text-center">
+					<div class="row">
+					</div>
+			</div>
+	</footer>
 
-    <!-- Back to top -->
-    <div class="back-to-top" data-rel="header">
-        <i class="icon-up"></i>
-    </div>
+	<!-- Back to top -->
+	<div class="back-to-top" data-rel="header">
+		<i class="fa fa-3x fa-chevron-circle-up"></i>
+	</div>
 {% endblock %}
