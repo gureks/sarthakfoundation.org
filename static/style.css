@@ -1,5 +1,15 @@
 html, body {
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+hr {
+	width: 200px;
+	height: 5px;
+	display: inline-block;
+	margin: 0 0 20px 0;
+	border-top: 3px solid #f9ca24;
+	border-bottom: 1px solid #f9ca24;
 }
 
 .btn-yellow {
@@ -12,8 +22,6 @@ html, body {
 .btn-yellow:hover {
 	background-color: #f1c40f;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.9);
-	/*border: 1px solid #f9ca24;*/
-	/*color: #333333;*/
 }
 
 nav.navbar.navbar-fixed-top {
@@ -44,6 +52,7 @@ ul.nav.navbar-nav {
 .navbar-toggle .icon-bar {
 	background-color: #333333;
 }
+
 .navbar-nav>li>a {
 	color: #333333;
 	border-bottom: 1px solid transparent;
@@ -125,6 +134,39 @@ ul.nav.navbar-nav {
 
 .carousel-indicators .active {
 	background-color: #f9ca24;
+}
+
+.volunteer--box {
+	background-color: #ffbe76;
+	color: #ffffff;
+}
+
+.sponsor--box {
+	background-color: #badc58;
+	color: #ffffff;
+}
+
+.donate--box {
+	background-color: #686de0;
+	color: #ffffff;
+}
+
+.triple-boxes {
+	padding: 0;
+	text-align: center;
+}
+
+.triple-boxes a.box--link h1 {
+	text-transform: uppercase;
+	padding: 50px 0;
+}
+
+a.box--link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
