@@ -1,9 +1,69 @@
 {% extends 'base.html' %}
 
 {% block content %}
+	{{ super() }}
 
-    {{ super() }}
+	<!-- Carousel
+	================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img class="first-slide img-responsive" src="{{ url_for('static', filename='img/carousel/1.jpg') }}" alt="If you can give a child only one gift, let it be education.">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<h1>If you can give a child only one gift, let it be <strong>education</strong>.</h1>
+								<!-- <p>The only thing more expensive than education is ignorance.</p> -->
+								<p><a class="btn btn-lg btn-primary btn-yellow" href="#" role="button">Become a Sarthi</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="second-slide" src="{{ url_for('static', filename='img/carousel/2.jpg') }}" alt="The only thing more expensive than education is ignorance.">
+				<div class="carousel-caption carousel-caption-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>The only thing more <strong>expensive</strong> than education is <strong>ignorance</strong>.</h1>
+								<p><a class="btn btn-lg btn-primary btn-yellow" href="#" role="button">Become a Sarthi</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img class="third-slide" src="{{ url_for('static', filename='img/carousel/3.jpg') }}" alt="Once you have education, no one can take it from you.">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<h1>Once <strong>you</strong> have education, no one can take it from <strong>you</strong>.</h1>
+								<p><a class="btn btn-lg btn-primary btn-yellow" href="#" role="button">Become a Sarthi</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a> -->
+	</div><!-- /.carousel -->
 
-    {% block footer %}{{ super() }}{% endblock %}
+	{% block footer %}{{ super() }}{% endblock %}
 
 {% endblock %}
