@@ -140,14 +140,60 @@
 	</div>
 
 	<footer id="footer" class="footer">
-			<div class="container padding-large text-center">
-					<div class="row">
+			<div class="container-fluid padding-large text-center">
+				<div class="row collections">
+					<div class="col-xs-12">
+						<h1 class="footer-heading">Rs. 2,99,422<span class="text-muted"> raised so far.</span></h1>
 					</div>
+				</div>
+				<div class="row supporters">
+					<div class="col-xs-12">
+						<h1 class="footer-heading">Our <strong>Supporters</strong></h1>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<img src="{{ url_for('static', filename='img/supporters/lucknow_tigers.png') }}" class="img img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<img src="{{ url_for('static', filename='img/supporters/uninor.png') }}" class="img img-responsive" alt="">
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<img src="{{ url_for('static', filename='img/supporters/iiitd.png') }}" class="img img-responsive" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row links">
+					<div class="col-sm-8 col-xs-12">
+						<ul class="documents">
+							<li><a href="/">Brochure</a></li>
+							<li><a href="">Portfolio</a></li>
+							<li><a href="">Proposal</a></li>
+							<li><a href="">Report</a></li>
+							<li><a href="">Registration</a></li>
+							<li><a href="">Become a Sarthi</a></li>
+							<!-- <li><a href="">Team</a></li> -->
+							<li><a href="">Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<ul class="social">
+							<li><a href="/"><span class="fa-stack fa-2x"><i class="fa fa-circle facebook-icon fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+							<li><a href=""><span class="fa-stack fa-2x twitter-icon"><i class="fa fa-circle fa-stack-2x twitter-icon"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+							<li><a href=""><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x linkedin-icon"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+							<li><a href=""><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x googleplus-icon"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row links">
+					<div class="col-xs-12 copyright">
+						<p>© 2018 Sarthak Foundation</p>
+					</div>
+				</div>
 			</div>
 	</footer>
 
-	<!-- Back to top -->
+	<!-- Back to top --><!--
 	<div class="back-to-top" data-rel="header">
 		<i class="fa fa-3x fa-chevron-circle-up"></i>
-	</div>
+	</div> -->
 {% endblock %}
